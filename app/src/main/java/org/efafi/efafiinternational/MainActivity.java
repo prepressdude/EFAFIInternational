@@ -12,6 +12,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 public class MainActivity extends Activity {
     private final long frequency = 300 * 1000;
@@ -21,6 +22,7 @@ public class MainActivity extends Activity {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_main );
         WebView webview = (WebView) findViewById( R.id.webView );
+        webview.setWebViewClient( new WebViewClient() );
         webview.loadUrl( getResources().getString( R.string.main_url ) ); //pull URL data
 
         AlarmManager alarmManager = (AlarmManager) getSystemService( ALARM_SERVICE ); // set rss feed alarm
