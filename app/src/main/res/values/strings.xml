@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EFAFI International</string>
+    <string name="main_url">http://www.enablechildren.org/</string>
+    <string name="feed_url">http://www.enablechildren.org/feed/</string>
+    <string name="notification_title">EFAFI Alert!</string>
+    <string name="notification_text">There\'s a new story from EFAFI!</string>
+</resources>
